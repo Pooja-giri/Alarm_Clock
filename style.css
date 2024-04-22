@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box; 
+  }
+
+  html {
+    padding-top:50px;
+}
+
+  body {
+    background: url('Capture.PNG');
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;    
+  }
+  .hide {
+    display: none;
+  }
+  .clock {
+    border: 8px solid whitesmoke;
+    border-radius: 100%;
+    padding: 40px;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 27.25em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .time {
+    font-size: 2.18em;
+    text-align: center;
+    padding: 10px 30px;
+    font-family: "Roboto Mono", monospace;
+  }
+  .inputs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+  }
+  .inputs input {
+    width: 2.8em;
+    font-size: 1.3em;
+    border: 1px solid whitesmoke;
+    border-radius: 0.1em;
+    padding: 0.4em 0.2em;
+  }
+  #setAlarm {
+    background-color: black;
+    border: none;
+    padding: 1em 2.2em;
+    display: block;
+    margin: 1.5em auto 0 auto;
+    border-radius: 0.2em;
+    color: #ffffff;
+  }
+  .alarm {
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr;
+    gap: 1em;
+    margin-top: 1.5em;
+    align-items: center;
+    border-bottom: 1px solid #898f9b;
+    padding-bottom: 0.6em;
+  }
+  .alarm input[type="checkbox"] {
+    appearance: none;
+    height: 2em;
+    width: 3.75em;
+    background-color: #e2e2ec;
+    border-radius: 1em;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+  }
+  .alarm input[type="checkbox"]:before {
+    position: absolute;
+    content: "";
+    background-color: #757683;
+    height: 1.43em;
+    width: 1.43em;
+    border-radius: 50%;
+    top: 0.25em;
+    left: 0.25em;
+  }
+  .alarm input[type="checkbox"]:checked {
+    background-color: #d2e2ff;
+  }
+  .alarm input[type="checkbox"]:checked:before {
+    background-color: black;
+    left: 2em;
+  }
+  .deleteBtn {
+    background-color: transparent;
+    font-size: 1.5em;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }

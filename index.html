@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alarm Clock</title>
+    <meta charset='UFT-8' name='viewport' content='width=device-width, initial=scale=1.0' >
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+</head>
+<body>
+    <div class="clock">
+        <div class="time">00:00:00</div>
+        <div class="container">
+          <div class="inputs">
+            <input type="number" id="hour" placeholder="00" min="0" max="23"/>
+            <input type="number" id="minute" placeholder="00" min="0" max="59"/>
+          </div>
+          <button id="setAlarm">Set Alarm</button>
+          <div class="activeAlarms"></div>
+        </div>
+      </div>
+      <script type='text/javascript' src='index.js'></script>
+</body>
+</html>  
